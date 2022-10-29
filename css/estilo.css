@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    isolation: isolate;
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+}
+
+body::after {
+    content: ' ';
+    position: fixed;
+    z-index: -1;
+    inset: 0;
+    opacity: .4;
+    background: url('../image/foto-fundo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    width: 100vw;
+    height: 5vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+    font-family: 'Roboto Mono', monospace;
+}
+
+div.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 100%;
+    padding-top: 3%;
+    border-radius: 15px;
+    background: rgba(211, 211, 211, 0.068);
+    box-shadow: 5px 10px #88888822;
+}
+
+div.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    width: 50%;
+    height: 10%;
+}
+
+div.formulario {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    height: 88%;
+}
+
+form textarea {
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    background: rgba(211, 211, 211, 0.729);
+    font-weight: bold;
+    font-size: 16px;
+    color: rgba(35, 35, 35, 0.853);
+}
+
+::placeholder {
+    font-size: 14px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    color: rgba(22, 87, 84, 0.729);
+}
+
+.select {
+    width: 78.5%;
+    height: 4%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background: rgba(211, 211, 211, 0.729);
+    font-size: 15px;
+    color: rgba(104, 106, 106, 0.56);
+}
+
+.select:hover {
+    color: rgb(103, 108, 108);
+}
+
+div.chave-container {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+div.chave-container label {
+    color: rgba(255, 255, 255, 0.912);
+}
+
+div.slider-range input {
+    background: rgb(211, 211, 211);
+    border-radius: 5px;
+    font-family: monospace;
+}
+
+div.slider-range input:hover {
+    cursor: pointer;
+}
+
+div.radio-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+    color: white;
+}
+
+div.radio {
+    margin-left: 5%;
+}
+
+div.radio input:hover {
+    cursor: pointer;
+}
+
+div.titulo h3 {
+    font-size: 28px;
+    color: white;
+}
+
+div.btn button {
+    width: 78.5%;
+    height: 4%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background: rgba(211, 211, 211, 0.729);
+    font-size: 15px;
+    color: rgba(104, 106, 106, 0.56);
+}
+
+div.btn button:hover {
+    color: rgb(103, 108, 108);
+}
+
+footer {
+    width: 100vw;
+    height: 5vh;
+}
